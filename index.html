@@ -14,16 +14,20 @@
 
 		<title>Frontend Mentor | Contact form</title>
 	</head>
-	<body class="relative">
-		<div
-			class="absolute sm:p-[0.5rem] lg:p-5 bg-[#0c7d69] text-white sm:text-sm lg:text-lg lg:font-black rounded-md border sm:inset-x-[622px] md:inset-x-[800px] top-0">
-			<span>Message Sent</span>
-			<p>Thanks for completing the form. We'll be in touch soon!</p>
+	<body class="relative bg_color">
+		<div class="message flex justify-center items-center hidden m-2">
+			<aside
+				class="lg:p-3 bg-[#0c7d69] text-white sm:text-sm lg:text-md lg:font-black rounded-md border top-0 lg:w-1/3 p-2">
+				<span>Message Sent</span>
+				<p>Thanks for completing the form. We'll be in touch soon!</p>
+			</aside>
 		</div>
-		<main class="bg_color lg:h-screen flex p-5 items-center justify-center">
+		<main class="bg_color lg:h-full flex p-5 items-center justify-center">
 			<section
-				class="container mx-auto bg-white p-7 border rounded-3xl lg:max-w-screen-md">
-				<h2 class="karla-font-700 text-2xl font-bold my-5">Contact Us</h2>
+				class="container mx-auto bg-white p-4 border rounded-3xl lg:max-w-[600px]">
+				<h2 class="karla-font-700 text-2xl font-bold my-5 lg:my-1">
+					Contact Us
+				</h2>
 				<form action="#">
 					<div class="grid md:grid-cols-2 md:gap-5">
 						<!-- First Name -->
@@ -31,7 +35,7 @@
 						<label for="firstname" class=""
 							>First Name <span class="text_color">*</span><br />
 							<input
-								class="border-black border p-2 w-full rounded-lg my-4"
+								class="border-black border p-2 lg:p-1 w-full rounded-lg my-4 lg:my-1"
 								type="text"
 								name="firstname"
 								id="firstname" />
@@ -39,9 +43,9 @@
 
 						<!-- Lastname -->
 						<label class="" for="lastname"
-							>Last Name <span class="text_color">*</span><br />
+							>Last Name <span class="text_color">*</span>
 							<input
-								class="border-black border p-2 w-full rounded-lg my-4"
+								class="border-black border p-2 lg:p-1 w-full rounded-lg my-4 lg:my-1"
 								type="text"
 								name="lastname"
 								id="lastname" />
@@ -51,7 +55,7 @@
 					<label class="" for="email"
 						>Email Address <span class="text_color">*</span><br />
 						<input
-							class="border-black border p-2 w-full rounded-lg my-4"
+							class="border-black border p-2 w-full rounded-lg my-4 lg:my-1 lg:p-1"
 							type="email"
 							name="email"
 							id="email" />
@@ -66,7 +70,7 @@
 						<div class="grid md:grid-cols-2 md:gap-5">
 							<!-- general equiry -->
 							<div
-								class="general__enquiry my-4 border py-3 pl-5 rounded-lg text-lg border-black">
+								class="general__enquiry my-4 border py-3 pl-5 rounded-lg text-lg border-black lg:my-1 lg:py-1">
 								<input
 									type="radio"
 									name="querytype"
@@ -76,7 +80,7 @@
 							</div>
 							<!-- support -->
 							<div
-								class="support__request my-4 border py-3 pl-5 rounded-lg text-lg border-black">
+								class="support__request my-4 border py-3 pl-5 rounded-lg text-lg border-black lg:my-1 lg:py-1">
 								<input
 									type="radio"
 									name="querytype"
@@ -97,7 +101,7 @@
 						<textarea
 							name="message"
 							id="message__area"
-							class="border border-black rounded-lg resize-none w-full h-40 mt-4 p-2"></textarea>
+							class="border border-black rounded-lg resize-none w-full h-40 lg:h-20 mt-4 lg:mt-1 p-2"></textarea>
 					</label>
 
 					<label for="consent" id="consent__label">
@@ -106,7 +110,7 @@
 								type="checkbox"
 								name="concent"
 								id="consent__box"
-								class="scale-150 mr-2 my-5" />
+								class="scale-150 mr-2" />
 							<span
 								>I consent to being contacted by the team
 								<span class="text_color">*</span></span

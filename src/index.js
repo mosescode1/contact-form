@@ -96,10 +96,11 @@ const consentValidate = function () {
 // SUCCESS MESSAGE 
 
 const successMessage = () => {
-
-    // setTimeout(function (e) {
-    //     body.removeChild(body.firstElementChild);
-    // }, 5000);
+    const message = document.querySelector(".message");
+    message.classList.remove("hidden");
+    setTimeout(() => {
+        message.classList.add("hidden");
+    }, 5000);
 }
 
 // SUBMIT MESSAGE
