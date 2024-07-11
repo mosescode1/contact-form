@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./src/index.css" />
+
+		<title>Frontend Mentor | Contact form</title>
+	</head>
+	<body class="relative">
+		<div
+			class="absolute sm:p-[0.5rem] lg:p-5 bg-[#0c7d69] text-white sm:text-sm lg:text-lg lg:font-black rounded-md border sm:inset-x-[622px] md:inset-x-[800px] top-0">
+			<span>Message Sent</span>
+			<p>Thanks for completing the form. We'll be in touch soon!</p>
+		</div>
+		<main class="bg_color lg:h-screen flex p-5 items-center justify-center">
+			<section
+				class="container mx-auto bg-white p-7 border rounded-3xl lg:max-w-screen-md">
+				<h2 class="karla-font-700 text-2xl font-bold my-5">Contact Us</h2>
+				<form action="#">
+					<div class="grid md:grid-cols-2 md:gap-5">
+						<!-- First Name -->
+
+						<label for="firstname" class=""
+							>First Name <span class="text_color">*</span><br />
+							<input
+								class="border-black border p-2 w-full rounded-lg my-4"
+								type="text"
+								name="firstname"
+								id="firstname" />
+						</label>
+
+						<!-- Lastname -->
+						<label class="" for="lastname"
+							>Last Name <span class="text_color">*</span><br />
+							<input
+								class="border-black border p-2 w-full rounded-lg my-4"
+								type="text"
+								name="lastname"
+								id="lastname" />
+						</label>
+					</div>
+					<!-- Email Address -->
+					<label class="" for="email"
+						>Email Address <span class="text_color">*</span><br />
+						<input
+							class="border-black border p-2 w-full rounded-lg my-4"
+							type="email"
+							name="email"
+							id="email" />
+					</label>
+					<br />
+
+					<!-- query type -->
+
+					<label class="" for="querytype"
+						>Query Type <span class="text_color">*</span> <br />
+
+						<div class="grid md:grid-cols-2 md:gap-5">
+							<!-- general equiry -->
+							<div
+								class="general__enquiry my-4 border py-3 pl-5 rounded-lg text-lg border-black">
+								<input
+									type="radio"
+									name="querytype"
+									id="general__enquiry"
+									class="mr-2 scale-125" />
+								General Enquiry
+							</div>
+							<!-- support -->
+							<div
+								class="support__request my-4 border py-3 pl-5 rounded-lg text-lg border-black">
+								<input
+									type="radio"
+									name="querytype"
+									id="support__request"
+									class="scale-125 mr-2" />
+								Support Request
+							</div>
+						</div>
+
+						<div class="email_error error hidden">
+							Please select a query type Message This field is required
+						</div>
+					</label>
+
+					<!-- Message -->
+					<label for="message"
+						>Message <span class="text_color">*</span><br />
+						<textarea
+							name="message"
+							id="message__area"
+							class="border border-black rounded-lg resize-none w-full h-40 mt-4 p-2"></textarea>
+					</label>
+
+					<label for="consent" id="consent__label">
+						<div class="">
+							<input
+								type="checkbox"
+								name="concent"
+								id="consent__box"
+								class="scale-150 mr-2 my-5" />
+							<span
+								>I consent to being contacted by the team
+								<span class="text_color">*</span></span
+							>
+							<div class="concent__error error hidden">
+								please consent to being contacted Submit Message Sent!
+							</div>
+						</div>
+					</label>
+
+					<button
+						type="submit"
+						class="font-black btn_color p-2 container mx-auto rounded-lg text-white text-2xl mt-5 hover:bg-[#2b4246]">
+						Submit
+					</button>
+				</form>
+
+				<div class="attribution mt-5">
+					Challenge by
+					<a href="https://www.frontendmentor.io?ref=challenge"
+						>Frontend Mentor</a
+					>. Coded by <a href="#">Eteng Moses Efa</a>.
+				</div>
+			</section>
+		</main>
+
+		<!-- Error state -->
+		<!-- First Name This field is required Last Name This field is required Email
+		Address Please enter a valid email address This field is required Query Type
+		General Enquiry Support Request Please select a query type Message This
+		field is required I consent to being contacted by the team To submit this
+		form, please consent to being contacted Submit Message Sent! Thanks for
+		completing the form. We'll be in touch soon! -->
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./src/index.js"></script>
+	</body>
+</html>

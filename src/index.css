@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primaryGreen-200-lighter: hsl(148, 38%, 91%);
+    --primaryGreen-600-medium: #0c7d69;
+    --primaryRed: hsl(0, 66%, 54%);
+    --naturalWhite: hsl(0, 0%, 100%) - Grey 500 (medium): hsl(186, 15%, 59%);
+    --naturalGrey-900-darker: #2b4246;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.bg_color {
+    background-color: var(--primaryGreen-200-lighter);
+}
+
+.btn_color {
+    background-color: var(--primaryGreen-600-medium);
+
+}
+
+.text_color {
+    color: var(--primaryGreen-600-medium);
+}
+
+.border_color {
+    border: 1px solid var(--primaryGreen-600-medium);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.karla-font-400 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.karla-font-700 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.error {
+    color: var(--primaryRed);
+    margin-bottom: 5px;
+}
+
+input[type="radio"]:checked {
+    accent-color: var(--primaryGreen-600-medium);
+}
