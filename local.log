@@ -11,3 +11,8 @@ Thu Jul 11 2024 15:19:01:96 GMT+0100 (WAT) -- [SUCCESS] You can now access your 
 Thu Jul 11 2024 15:19:06:398 GMT+0100 (WAT) -- Press Ctrl-C to exit
 
 
+Fri Jul 12 2024 08:55:08:783 GMT+0100 (WAT) --  *** Error: The connection to BrowserStack failed 10 attempts. Please try again.
+
+You need to allow outbound traffic for *.browserstack.com in your corporate firewall to setup local testing.
+For any other problem please contact support@browserstack.com.
+
